@@ -2,13 +2,7 @@
 > This project is still under developement, so please don't use it atm
 
  
-## Homepage:
-[https://comic-manga-ebook.github.io](https://comic-manga-ebook.github.io)
-
-### Copyright:
-Copyright (c) 2023 Clemens K. (https://github.com/metacreature)
-
-**If you like it I would be happy if you  [donate on checkya](https://checkya.com/1hhp2cpit9eha/payme)**
+### Homepage: [https://comic-manga-ebook.github.io](https://comic-manga-ebook.github.io)
 
 ## About this repository:
 
@@ -16,6 +10,12 @@ This is the python-library you can use for your project to build `*`.ecmb - file
 You can't do anything wrong with this, coz if you do a mistake (eg. passing a boolean to set_summary()) an ecmbException will be raised. After the creation the file will be automatic validated. 
 
 Published under [MIT License](https://choosealicense.com/licenses/mit/)
+
+**Copyright:**
+
+Copyright (c) 2023 Clemens K. (https://github.com/metacreature)
+
+**If you like it I would be happy if you  [donate on checkya](https://checkya.com/1hhp2cpit9eha/payme)**
 
 # Using the library
 
