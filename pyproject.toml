@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "ecmblib"
+version = "0.0.4"
+authors = [
+  { name="Clemens K."},
+]
+description = "This is the python-library you can use for your project to build *.ecmb - files without caring about the internals of the file-format."
+keywords = ["ecmb", "ebook", "comic", "manga", "file-format"]
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "pyyaml",
+  "lxml",
+  "pillow",
+  "path",
+]
+
+
+
+[project.urls]
+Homepage = "https://github.com/comic-manga-ebook/ecmblib_python"
+Issues = "https://github.com/comic-manga-ebook/ecmblib_python/issues"

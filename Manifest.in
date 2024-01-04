@@ -1,0 +1,2 @@
+include src/ecmblib/ecmb_definition/schema/*.xsd
+include src/ecmblib/ecmb_definition/validator/python/*.yml
