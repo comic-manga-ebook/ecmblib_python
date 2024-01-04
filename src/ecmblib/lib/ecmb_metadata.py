@@ -107,6 +107,17 @@ class ecmbMetaData(ecmbMetaDataBase):
         self._data['summary'] = (summary, {})
 
 
+    def set_pages(self, pages: int) -> None:
+        """set_pages 
+
+        :param pages: the book's page-count
+        :type pages: str
+        """
+        if pages != None:
+            ecmbUtils.validate_int(True, 'pages', pages, 1)
+        self._data['pages'] = (pages, {})
+
+
     def set_notes(self, notes: str) -> None:
         """set_notes 
 

@@ -18,7 +18,10 @@ print('\n', flush=True)
 ###################################################
 
 # book-type, language, unique-id, width of the images, height of the images
-# all images have to have the width and height you've defined here. Of course except of double-pages which have double-width
+# The width and height "should" be the size of the images. 
+# It not exact, coz when I was building fan-translated Mangas, all images had a different size and aspect-ratio, 
+# but the aspect-ratio is enterly important for the validator to validate the correct placement of double-page-images.
+# Formula: id_double = (img_width / img_height) > (book_width / book_height * 1.5)
 # the minimun length of the unique_id is 16 - its recommended to use a md5-hash with a prefix of the publishers name 
 book = ecmbBook(BOOK_TYPE.MANGA, 'en', 'bestmangapublisherinc_98a2cd52fea1168d', 900, 1200)
 

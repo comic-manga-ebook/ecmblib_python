@@ -63,6 +63,7 @@ class testEcmb(unittest.TestCase):
             book.metadata.set_title('The Big Trip')
             book.metadata.set_volume(1)
             book.metadata.set_summary('A stick figure goes on a big thrilling hiking-trip.')
+            book.metadata.set_pages(200)
             book.metadata.set_notes('my first build')
 
             book.metadata.add_author('Clemens K.')
@@ -150,6 +151,7 @@ class testEcmb(unittest.TestCase):
             book.metadata.set_title('The Big Trip')
             book.metadata.set_volume(None)
             book.metadata.set_summary(None)
+            book.metadata.set_pages(None)
             book.metadata.set_notes(None)
 
             # original

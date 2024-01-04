@@ -83,6 +83,7 @@
 			<xs:element name="title" type="notemptystring" minOccurs="1" maxOccurs="1"/>
 			<xs:element name="volume" type="volume" minOccurs="0" maxOccurs="1"/>
 			<xs:element name="summary" type="notemptystring" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="pages" type="pages" minOccurs="0" maxOccurs="1"/>
 			<xs:element name="notes" type="notemptystring" minOccurs="0" maxOccurs="1"/>
 			<xs:element name="authors" type="authors" minOccurs="0" maxOccurs="1"/>
 			<xs:element name="editors" type="editors" minOccurs="0" maxOccurs="1"/>
@@ -278,7 +279,12 @@
 			<xs:minInclusive value="1" />
 		</xs:restriction>
 	</xs:simpleType>
-	
+
+	<xs:simpleType name="pages">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="1" />
+		</xs:restriction>
+	</xs:simpleType>
 	
 	<xs:complexType name="author">
 		<xs:simpleContent> 

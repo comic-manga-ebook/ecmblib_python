@@ -47,10 +47,12 @@ from .ecmb_definition.validator.python.ecmb_validator import ecmbValidator
 
 class ecmbBook:
     """
-    The main class to genererate `*`.ecmb - files
+    The main class to genererate `*`.ecmb - files 
 
     :note: 
     * the title is mandatory, so please call book.metadata.set_title('My Title')
+    * the width and height "should" be the size of the images. It not exact, coz when I was building fan-translated Mangas, all images had a different size and aspect-ratio, but the aspect-ratio is enterly important for the validator to validate the correct placement of double-page-images. (Formula: id_double = (img_width / img_height) > (book_width / book_height * 1.5))
+    * chapters with an uneven page-count are supported, also double-pages on an uneven page and uneven page-count of the book ... of course you will get a warning
     * All functions in the library will raise an ecmbException on invalid values!
 
     :param book_type: the book-type defines the reading-direction of the book

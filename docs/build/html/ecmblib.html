@@ -41,7 +41,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'ecmblib';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Welcome to ecmblib’s documentation!" href="index.html" />
+    <link rel="prev" title="How to use" href="howto.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -135,6 +135,20 @@
   </p>
   <ul class="bd-navbar-elements navbar-nav">
     
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="installation.html">
+                        Installation
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="howto.html">
+                        How to use
+                      </a>
+                    </li>
+                
+
                     <li class="nav-item current active">
                       <a class="nav-link nav-internal" href="#">
                         Class-reference
@@ -226,6 +240,20 @@ document.write(`
   </p>
   <ul class="bd-navbar-elements navbar-nav">
     
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="installation.html">
+                        Installation
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="howto.html">
+                        How to use
+                      </a>
+                    </li>
+                
+
                     <li class="nav-item current active">
                       <a class="nav-link nav-internal" href="#">
                         Class-reference
@@ -320,6 +348,8 @@ document.write(`
 </dl>
 <ul class="simple">
 <li><p>the title is mandatory, so please call book.metadata.set_title(‘My Title’)</p></li>
+<li><p>the width and height “should” be the size of the images. It not exact, coz when I was building fan-translated Mangas, all images had a different size and aspect-ratio, but the aspect-ratio is enterly important for the validator to validate the correct placement of double-page-images. (Formula: id_double = (img_width / img_height) &gt; (book_width / book_height * 1.5))</p></li>
+<li><p>chapters with an uneven page-count are supported, also double-pages on an uneven page and uneven page-count of the book … of course you will get a warning</p></li>
 <li><p>All functions in the library will raise an ecmbException on invalid values!</p></li>
 </ul>
 <dl class="field-list simple">
@@ -474,6 +504,16 @@ Its reccomended to add the authors to the original book, and leave them empty he
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>summary</strong> (<em>str</em>) – the book’s summary in the book’s language</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ecmblib.lib.ecmb_metadata.ecmbMetaData.set_pages">
+<span class="sig-name descname"><span class="pre">set_pages</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pages</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#ecmblib.lib.ecmb_metadata.ecmbMetaData.set_pages" title="Link to this definition">#</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pages</strong> (<em>str</em>) – the book’s page-count</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1360,6 +1400,20 @@ You can add images directly to the root as well for example the introduction, ta
 </dd></dl>
 
 <dl class="py class">
+<dt class="sig sig-object py" id="ecmblib.lib.ecmb_enums.BASED_ON_TYPE">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ecmblib.lib.ecmb_enums.</span></span><span class="sig-name descname"><span class="pre">BASED_ON_TYPE</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">module</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qualname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boundary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ecmblib.lib.ecmb_enums.BASED_ON_TYPE" title="Link to this definition">#</a></dt>
+<dd><ul class="simple">
+<li><p>NOVEL = ‘Novel’</p></li>
+<li><p>LIGHTNOVEL = ‘Lightnovel’</p></li>
+<li><p>MANGA = ‘Manga’</p></li>
+<li><p>COMIC = ‘Comic’</p></li>
+<li><p>ANIME = ‘Anime’</p></li>
+<li><p>GAME = ‘Game’</p></li>
+<li><p>OTHER =’Other’</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py class">
 <dt class="sig sig-object py" id="ecmblib.lib.ecmb_enums.AUTHOR_ROLE">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ecmblib.lib.ecmb_enums.</span></span><span class="sig-name descname"><span class="pre">AUTHOR_ROLE</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">module</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qualname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boundary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ecmblib.lib.ecmb_enums.AUTHOR_ROLE" title="Link to this definition">#</a></dt>
 <dd><ul class="simple">
@@ -1378,20 +1432,6 @@ You can add images directly to the root as well for example the introduction, ta
 <dd><ul class="simple">
 <li><p>TRANSLATOR = ‘Translator’</p></li>
 <li><p>SCANNER = ‘Scanner’</p></li>
-</ul>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="ecmblib.lib.ecmb_enums.BASED_ON_TYPE">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ecmblib.lib.ecmb_enums.</span></span><span class="sig-name descname"><span class="pre">BASED_ON_TYPE</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">module</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qualname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boundary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ecmblib.lib.ecmb_enums.BASED_ON_TYPE" title="Link to this definition">#</a></dt>
-<dd><ul class="simple">
-<li><p>NOVEL = ‘Novel’</p></li>
-<li><p>LIGHTNOVEL = ‘Lightnovel’</p></li>
-<li><p>MANGA = ‘Manga’</p></li>
-<li><p>COMIC = ‘Comic’</p></li>
-<li><p>ANIME = ‘Anime’</p></li>
-<li><p>GAME = ‘Game’</p></li>
-<li><p>OTHER =’Other’</p></li>
 </ul>
 </dd></dl>
 
@@ -1443,12 +1483,12 @@ You can add images directly to the root as well for example the introduction, ta
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="index.html"
+       href="howto.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome to ecmblib’s documentation!</p>
+        <p class="prev-next-title">How to use</p>
       </div>
     </a>
 </div>
@@ -1490,6 +1530,7 @@ You can add images directly to the root as well for example the introduction, ta
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ecmblib.lib.ecmb_metadata.ecmbMetaData.set_title"><code class="docutils literal notranslate"><span class="pre">ecmbMetaData.set_title()</span></code></a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ecmblib.lib.ecmb_metadata.ecmbMetaData.set_volume"><code class="docutils literal notranslate"><span class="pre">ecmbMetaData.set_volume()</span></code></a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ecmblib.lib.ecmb_metadata.ecmbMetaData.set_summary"><code class="docutils literal notranslate"><span class="pre">ecmbMetaData.set_summary()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ecmblib.lib.ecmb_metadata.ecmbMetaData.set_pages"><code class="docutils literal notranslate"><span class="pre">ecmbMetaData.set_pages()</span></code></a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ecmblib.lib.ecmb_metadata.ecmbMetaData.set_notes"><code class="docutils literal notranslate"><span class="pre">ecmbMetaData.set_notes()</span></code></a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ecmblib.lib.ecmb_metadata.ecmbMetaData.add_editor"><code class="docutils literal notranslate"><span class="pre">ecmbMetaData.add_editor()</span></code></a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ecmblib.lib.ecmb_metadata.ecmbMetaData.add_genre"><code class="docutils literal notranslate"><span class="pre">ecmbMetaData.add_genre()</span></code></a></li>
@@ -1603,9 +1644,9 @@ You can add images directly to the root as well for example the introduction, ta
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-ecmblib.lib.ecmb_enums">Enums</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ecmblib.lib.ecmb_enums.ALLOWED_IMAGE_EXTENTIONS"><code class="docutils literal notranslate"><span class="pre">ALLOWED_IMAGE_EXTENTIONS</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ecmblib.lib.ecmb_enums.BOOK_TYPE"><code class="docutils literal notranslate"><span class="pre">BOOK_TYPE</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ecmblib.lib.ecmb_enums.BASED_ON_TYPE"><code class="docutils literal notranslate"><span class="pre">BASED_ON_TYPE</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ecmblib.lib.ecmb_enums.AUTHOR_ROLE"><code class="docutils literal notranslate"><span class="pre">AUTHOR_ROLE</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ecmblib.lib.ecmb_enums.EDITOR_ROLE"><code class="docutils literal notranslate"><span class="pre">EDITOR_ROLE</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ecmblib.lib.ecmb_enums.BASED_ON_TYPE"><code class="docutils literal notranslate"><span class="pre">BASED_ON_TYPE</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ecmblib.lib.ecmb_enums.CONTENT_WARNING"><code class="docutils literal notranslate"><span class="pre">CONTENT_WARNING</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ecmblib.lib.ecmb_enums.TARGET_SIDE"><code class="docutils literal notranslate"><span class="pre">TARGET_SIDE</span></code></a></li>
 </ul>
