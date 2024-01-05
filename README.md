@@ -33,6 +33,7 @@ Copyright (c) 2023 Clemens K. (https://github.com/metacreature)
     - run `pip install -r requirements.txt`
     - go to the example-folder `cd examples/advanced_book/`
     - run `python advanced_book.py`
+      
 The examples are working even if you didn't install the library via pip.
 
 ### Documentation:
