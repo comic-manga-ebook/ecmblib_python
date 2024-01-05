@@ -26,9 +26,8 @@ Copyright (c) 2023 Clemens K. (https://github.com/metacreature)
  
 ### Trying out examples
 - download and install Python3 (>=3.11) [https://www.python.org/downloads/](https://www.python.org/downloads/)
-- download and install Git [https://git-scm.com/downloads](https://git-scm.com/downloads)´
-- open the git-console and then
-    - clone or download this repositiory
+- clone or download this repositiory
+- open the console and then
     - go to the project-folder `cd ecmblib_python/`
     - run `pip install -r requirements.txt`
     - go to the example-folder `cd examples/advanced_book/`
