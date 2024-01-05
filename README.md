@@ -33,8 +33,7 @@ Copyright (c) 2023 Clemens K. (https://github.com/metacreature)
     - run `pip install -r requirements.txt`
     - go to the example-folder `cd examples/advanced_book/`
     - run `python advanced_book.py`
-The examples are working even if you didn't install the library via pip, but coz of the relative import type-hinting is not working.
-If you want to use type-hinting you have to install the library first and then change the import of ecmblib at the top of the examples.
+The examples are working even if you didn't install the library via pip.
 
 ### Documentation:
 [https://comic-manga-ebook.github.io/ecmblib](https://comic-manga-ebook.github.io/ecmblib)
