@@ -2,3 +2,6 @@ pyyaml
 lxml
 pillow
 path
+
+sphinx
+pydata_sphinx_theme
