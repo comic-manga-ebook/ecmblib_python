@@ -20,7 +20,7 @@ Homepage: `https://comic-manga-ebook.github.io <https://comic-manga-ebook.github
 
 Copyright (c) 2023 Clemens K. (https://github.com/metacreature)
 
-**If you like it I would be happy if you  [donate on checkya](https://checkya.com/1hhp2cpit9eha/payme)**
+**If you like it I would be happy if you**  `donate on checkya <https://checkya.com/1hhp2cpit9eha/payme>`_
 
 
 Contents
