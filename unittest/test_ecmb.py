@@ -23,11 +23,10 @@
  SOFTWARE.
 """
 
-import unittest, io, os
+import unittest, io, os, path
 from PIL import Image
 
 # only for relative import if you cloned the project
-import path
 import sys
 directory = path.Path(__file__).abspath()
 sys.path.append(str(directory.parent.parent) + '/src/')
