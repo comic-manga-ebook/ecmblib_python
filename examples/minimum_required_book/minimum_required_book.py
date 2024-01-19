@@ -21,7 +21,7 @@ print('\n', flush=True)
 # but the aspect-ratio is enterly important for the validator to validate the correct placement of double-page-images.
 # Formula: id_double = (img_width / img_height) > (book_width / book_height * 1.5)
 # the minimun length of the unique_id is 16 - its recommended to use a md5-hash with a prefix of the publishers name 
-book = ecmbBook(BOOK_TYPE.MANGA, 'en', 'bestmangapublisherinc_98a2cd52fea1168d', 900, 1200)
+book = ecmbBook(BOOK_TYPE.MANGA, 'en', 'bestmangapublisherinc_91a2cd52fea192d', 900, 1200)
 
 # title is mandatory
 book.metadata.set_title('The Big Trip')
