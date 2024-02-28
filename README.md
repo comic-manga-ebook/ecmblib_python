@@ -2,7 +2,7 @@
 > This project is still under developement, so please don't use it atm
 
  
-### Homepage: [https://comic-manga-ebook.github.io](https://comic-manga-ebook.github.io)
+### Homepage: [https://github.com/comic-manga-ebook/](https://github.com/comic-manga-ebook/)
 
 ### Table of contents
 - [About this repository](#about-this-repository)
