@@ -14,7 +14,7 @@ Published under: `MIT License <https://choosealicense.com/licenses/mit/>`_
 
 Go to source-code: `https://github.com/comic-manga-ebook/ecmblib_python <https://github.com/comic-manga-ebook/ecmblib_python>`_
 
-Homepage: `https://comic-manga-ebook.github.io <https://comic-manga-ebook.github.io>`_
+Homepage: `https://github.com/comic-manga-ebook/ <https://github.com/comic-manga-ebook/>`_
 
 **Copyright:**
 
