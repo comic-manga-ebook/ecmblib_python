@@ -44,6 +44,7 @@ book.metadata.add_genre('Adventure')
 book.metadata.add_genre('Summer')
 
 # it's really recommended to use this if necessary
+book.metadata.add_content_warning(CONTENT_WARNING.ADULT)
 book.metadata.add_content_warning(CONTENT_WARNING.SEXUAL_CONTENT)
 
 
@@ -85,7 +86,13 @@ book.content.set_cover_rear('../source_images/rear.jpg')
 # also double-pages on an uneven page and uneven page-count of the book ... of course you will get a warning
 folder1 = book.content.add_folder()
 # folder1.add_image('../source_images/img_1.jpg')
-folder1.add_image('../source_images/img_2.jpg')
+
+img = Image.open('../source_images/img_2.jpg')
+fp_img = io.BytesIO()
+img.save(fp_img, 'webp', quality = 80, method=5)
+
+folder1.add_image(fp_img)
+del img, fp_img
 
 # you can define unique_ids to access the the objects easier for the navigation
 # it would be a good idea to use file- and folder-paths of your source-files
@@ -95,22 +102,8 @@ folder2.add_image('../source_images/img_4.jpg')
 the_girl = folder2.add_image('../source_images/img_5.jpg')
 folder2.add_image('../source_images/img_6.jpg')
 
-# double pages require to have the full, left and right image
-# every image can be a BytesIO, if you want the edit/split them on-the-fly
-img = Image.open('../source_images/img_7.jpg')
-
-img_left = img.crop((0, 0, 900, 1200))
-img_right = img.crop((900, 0, 1800, 1200))
-
-fp_left = io.BytesIO()
-fp_right = io.BytesIO()
-			
-img_left.save(fp_left, 'jpeg', quality= 85)
-img_right.save(fp_right, 'jpeg', quality= 85)
-
-folder2.add_image('../source_images/img_7.jpg', fp_left, fp_right, unique_id='the summit')
-
-del img, img_left, img_right, fp_left, fp_right
+# double page
+folder2.add_image('../source_images/img_7.jpg', unique_id='the summit')
 
 # subfolders and sub-sub-sub-sub-folders are supported 
 # every folder have to have at least one image, even if there is only one in a sub-sub-sub-sub-folder

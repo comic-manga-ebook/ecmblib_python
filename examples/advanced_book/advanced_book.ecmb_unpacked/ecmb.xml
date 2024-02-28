@@ -16,6 +16,7 @@
       <genre>Summer</genre>
     </genres>
     <warnings>
+      <warning>Adult</warning>
       <warning>Sexual Content</warning>
     </warnings>
     <basedon>
@@ -31,14 +32,14 @@
   </metadata>
   <content cover_front="cover_front.jpg" cover_rear="cover_rear.jpg">
     <dir name="1">
-      <img src="2.jpg"/>
+      <img src="2.webp"/>
     </dir>
     <dir name="3">
       <img src="4.jpg"/>
       <img src="5.jpg"/>
       <img src="6.jpg"/>
       <img src="7.jpg"/>
-      <dimg src="8.jpg" src_left="8_l.jpg" src_right="8_r.jpg"/>
+      <dimg src="8.jpg"/>
       <dir name="9">
         <img src="a.jpg"/>
         <img src="b.jpg"/>
@@ -50,7 +51,7 @@
       <link label="The Girl" href="/content/3/6.jpg"/>
       <link label="The Summit" href="/content/3/8.jpg#left"/>
     </headline>
-    <chapter label="Chapter 1" title="The Bus-Trip" dir="/content/1" href="/2.jpg"/>
+    <chapter label="Chapter 1" title="The Bus-Trip" dir="/content/1" href="/2.webp"/>
     <chapter label="Chapter 2" title="The Hiking-Trip" dir="/content/3" href="/4.jpg">
       <link label="The Summit" href="/8.jpg#left"/>
       <chapter label="Chapter 2.1" title="Downhill" dir="/9" href="/a.jpg"/>

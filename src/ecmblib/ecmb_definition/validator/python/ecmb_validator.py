@@ -117,7 +117,7 @@ class ecmbValidator():
         return True
 
 
-    def _get_image_size(self, ecmb_file: zipfile.ZipFile, file_name: str) -> (int, int):
+    def _get_image_size(self, ecmb_file: zipfile.ZipFile, file_name: str) -> tuple[int, int]:
         with ecmb_file.open(file_name, "r") as f:
             parser = ImageFile.Parser()
             chunk = f.read(2048)
@@ -190,8 +190,6 @@ class ecmbValidator():
                     self._xml_content.append(src + '#left')
                     self._xml_content.append(src + '#right')
                     self._xml_files_list.append((src, True))
-                    self._xml_files_list.append((path + '/' + node.get('src_left'), False))
-                    self._xml_files_list.append((path + '/' + node.get('src_right'), False))
                 case 'dir':
                     name = node.get('name')
                     self._xml_content.append(path + '/' + name)

@@ -168,8 +168,6 @@
 
 	<xs:complexType name ="dimg">
 		<xs:attribute name="src" type="img_src" use="required" />
-		<xs:attribute name="src_left" type="img_src" use="required" />
-		<xs:attribute name="src_right" type="img_src" use="required" />
 	</xs:complexType>
 
 
@@ -326,6 +324,7 @@
 
 	<xs:simpleType name="warning">
 		<xs:restriction base="xs:string">
+			<xs:enumeration value="Adult"/>
 			<xs:enumeration value="Mature Themes"/>
 			<xs:enumeration value="Nudity"/>
 			<xs:enumeration value="Sexual Content"/>

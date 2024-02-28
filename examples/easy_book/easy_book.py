@@ -67,8 +67,8 @@ folder2.add_image('../source_images/img_4.jpg')
 folder2.add_image('../source_images/img_5.jpg')
 folder2.add_image('../source_images/img_6.jpg')
 
-# double pages require to have the full, left and right image
-folder2.add_image('../source_images/img_7.jpg', '../source_images/img_7_left.jpg', '../source_images/img_7_left.jpg')
+# double page
+folder2.add_image('../source_images/img_7.jpg')
 
 folder2.add_image('../source_images/img_8.jpg')
 folder2.add_image('../source_images/img_9.jpg')

@@ -100,6 +100,7 @@ class EDITOR_ROLE(Enum):
 class CONTENT_WARNING(Enum):
     """CONTENT_WARNING 
     
+    * ADULT = 'Adult'
     * MATURE_THEMES = 'Mature Themes'
     * NUDITY = 'Nudity'
     * SEXUAL_CONTENT = 'Sexual Content'
@@ -117,7 +118,8 @@ class CONTENT_WARNING(Enum):
     * SELF_HARM = 'Self-Harm'
     * SUICIDE = 'Suicide'
     * DRUGS = 'Drugs'
-    """    
+    """
+    ADULT = 'Adult'
     MATURE_THEMES = 'Mature Themes'
     NUDITY = 'Nudity'
     SEXUAL_CONTENT = 'Sexual Content'

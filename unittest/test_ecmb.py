@@ -402,11 +402,11 @@ class testEcmb(unittest.TestCase):
                         book.content.add_image(img)
                         book.content.add_image(img)
                     case 31:
-                        book.content.add_image(self._source_dir + 'img_7.jpg')
+                        book.content.set_cover_front(False) # removed test 
                     case 32:
-                        book.content.add_image(self._source_dir + 'img_1.jpg', self._source_dir + 'img_1.jpg', self._source_dir + 'img_1.jpg')
+                        book.content.set_cover_front(False) # removed test 
                     case 33:
-                        book.content.add_image(self._source_dir + 'img_7.jpg', self._source_dir + 'img_7.jpg', self._source_dir + 'img_7.jpg')
+                        book.content.set_cover_front(False) # removed test 
                     case 34:
                         book.content.add_image(False)
                     case 35:

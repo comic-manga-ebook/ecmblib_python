@@ -80,7 +80,7 @@ class ecmbContentBase(ABC):
         self._book_obj.int_register_content(self)
 
     
-    def _check_image(self, src: str|BytesIO, varname: str, allow_double: bool) -> (bool, str):
+    def _check_image(self, src: str|BytesIO, varname: str, allow_double: bool) -> tuple[bool, str]:
         error_msg = None
         
         if type(src) == BytesIO:

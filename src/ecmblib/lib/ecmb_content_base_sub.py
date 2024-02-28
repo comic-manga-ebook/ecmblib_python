@@ -33,22 +33,17 @@ class ecmbContentBaseSub(ecmbContentBase):
 
     _contents = None
     
-    def add_image(self, src_or_image: str|BytesIO|ecmbContentImage, src_left: str|BytesIO = None, src_right: str|BytesIO = None, unique_id: str = None) -> ecmbContentImage:
+    def add_image(self, src_or_image: str|BytesIO|ecmbContentImage, unique_id: str = None) -> ecmbContentImage:
         """add_image
 
         Adds/creates an image
         
         :note:
-        * if you add a double-page-image you have to add the splitted left and right part as well to give the reader-app more opportunities. The class automatic detects if a double-page-image is added and will raise an ecmbException if you didn't provide the left and right part
         * provide a unique-id if you want to access this image easily later at navigation
         * if you add a previously created ecmbContentImage all other parameters are ignored
 
         :param src_or_image: an image (single-page or double-page) or a previously created ecmbContentImage
         :type src_or_image: str | BytesIO | ecmbContentImage
-        :param src_left: the left part of the double-page-image
-        :type src_left: str | BytesIO, optional
-        :param src_right: the right part of the double-page-image
-        :type src_right: str | BytesIO, optional
         :param unique_id: provide a unique-id if you want to access this image easily later at navigation
         :type unique_id: str, optional
 
@@ -58,7 +53,7 @@ class ecmbContentBaseSub(ecmbContentBase):
         if type(src_or_image) == ecmbContentImage:
             image_obj = src_or_image
         elif type(src_or_image) == BytesIO or type(src_or_image) == str:
-            image_obj = ecmbContentImage(self._book_obj, src_or_image, src_left, src_right, unique_id)     
+            image_obj = ecmbContentImage(self._book_obj, src_or_image, unique_id)     
         else:
             ecmbUtils.raise_exception('please provide ecmbContentImage, BytesIO or a path to an existing image-file!')
         
