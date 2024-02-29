@@ -37,10 +37,13 @@ class ecmbUtils():
     @staticmethod
     def get_caller(stack_nr: int = 0) -> str:
         stack_nr += 1
-        stack = inspect.stack()
-        classname = stack[stack_nr][0].f_locals["self"].__class__.__name__
-        methodname = stack[stack_nr][0].f_code.co_name
-        return f'{classname}.{methodname}():'
+        try:
+            stack = inspect.stack()
+            classname = stack[stack_nr][0].f_locals["self"].__class__.__name__
+            methodname = stack[stack_nr][0].f_code.co_name
+            return f'{classname}.{methodname}():'
+        except:
+            return ecmbUtils.get_caller(stack_nr +1)
     
 
     @staticmethod

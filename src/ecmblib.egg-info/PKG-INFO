@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: ecmblib
-Version: 0.0.5
+Version: 0.0.6
 Summary: This is the python-library you can use for your project to build *.ecmb - files without caring about the internals of the file-format.
 Author: Clemens K.
 Project-URL: Homepage, https://github.com/comic-manga-ebook/ecmblib_python
@@ -21,7 +21,7 @@ Requires-Dist: path
 > This project is still under developement, so please don't use it atm
 
  
-### Homepage: [https://comic-manga-ebook.github.io](https://comic-manga-ebook.github.io)
+### Homepage: [https://github.com/comic-manga-ebook/](https://github.com/comic-manga-ebook/)
 
 ### Table of contents
 - [About this repository](#about-this-repository)
