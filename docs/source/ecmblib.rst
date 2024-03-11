@@ -34,6 +34,7 @@ ecmbContent
 -----------
 
 .. automodule:: ecmblib.lib.ecmb_content
+    :exclude-members: get_unique_id
 
 
 ecmbContentFolder
@@ -55,6 +56,7 @@ ecmbNavigation
 --------------
 
 .. automodule:: ecmblib.lib.ecmb_navigation
+    :exclude-members: set_title
 
 
 ecmbNavigationChapter
