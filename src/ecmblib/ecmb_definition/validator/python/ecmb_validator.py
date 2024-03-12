@@ -27,6 +27,7 @@ import re, os, yaml, io, zipfile, path
 from typing import Callable
 from lxml import etree
 from PIL import ImageFile
+import datetime
 
 class ecmbValidator():
 
@@ -137,6 +138,9 @@ class ecmbValidator():
         
         self._xml_image_width = int(root.get('width'))
         self._xml_image_height = int(root.get('height'))
+
+        for publishdate in root.iter('publishdate'):
+            self._validate_date(publishdate.text)
         
         self._xml_navigation = []
         self._xml_content = []
@@ -255,6 +259,22 @@ class ecmbValidator():
         
         self._schema_location = schema_location
     
+
+    def _validate_date(self, date_text: str) -> None:
+        current_year = datetime.date.today().year
+        if re.match('^[0-9]{4}$', date_text):
+            year = int(date_text)
+        else:
+            try:
+                d = datetime.date.fromisoformat(date_text)
+                year = d.year
+            except:
+                self._write_error("invalid publishdate")
+                return
+            
+        if year < 1900 or year > current_year + 1:
+            self._write_error("publishdate has to be between 1900 and " + str(current_year + 1))
+
     
     def _write_error(self, msg: str) -> None:
         self._is_valid = False

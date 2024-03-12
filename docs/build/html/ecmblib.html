@@ -340,7 +340,7 @@ document.write(`
 <span id="ecmbbook"></span><h2>ecmbBook<a class="headerlink" href="#module-ecmblib.ecmb_book" title="Link to this heading">#</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="ecmblib.ecmb_book.ecmbBook">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ecmblib.ecmb_book.</span></span><span class="sig-name descname"><span class="pre">ecmbBook</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">book_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#ecmblib.lib.ecmb_enums.BOOK_TYPE" title="ecmblib.lib.ecmb_enums.BOOK_TYPE"><span class="pre">BOOK_TYPE</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">language</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ecmblib.ecmb_book.ecmbBook" title="Link to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ecmblib.ecmb_book.</span></span><span class="sig-name descname"><span class="pre">ecmbBook</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">book_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#ecmblib.lib.ecmb_enums.BOOK_TYPE" title="ecmblib.lib.ecmb_enums.BOOK_TYPE"><span class="pre">BOOK_TYPE</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">language</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#ecmblib.lib.ecmb_enums.LANGUAGES_LIST" title="ecmblib.lib.ecmb_enums.LANGUAGES_LIST"><span class="pre">LANGUAGES_LIST</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">uid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ecmblib.ecmb_book.ecmbBook" title="Link to this definition">#</a></dt>
 <dd><p>The main class to genererate <cite>*</cite>.ecmb - files</p>
 <dl class="field-list simple">
 <dt class="field-odd">Note<span class="colon">:</span></dt>
@@ -630,7 +630,7 @@ Its reccomended to add the authors here and leave the authors at the main meta-d
 </ul>
 <dl class="py method">
 <dt class="sig sig-object py" id="ecmblib.lib.ecmb_metadata_original.ecmbMetaDataOriginal.set_language">
-<span class="sig-name descname"><span class="pre">set_language</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">language</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#ecmblib.lib.ecmb_metadata_original.ecmbMetaDataOriginal.set_language" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_language</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">language</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#ecmblib.lib.ecmb_enums.LANGUAGES_LIST" title="ecmblib.lib.ecmb_enums.LANGUAGES_LIST"><span class="pre">LANGUAGES_LIST</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#ecmblib.lib.ecmb_metadata_original.ecmbMetaDataOriginal.set_language" title="Link to this definition">#</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>language</strong> (<em>str</em>) – the language of the book</p>
@@ -747,7 +747,7 @@ Its reccomended to add the authors here and leave the authors at the main meta-d
 
 <dl class="py method">
 <dt class="sig sig-object py" id="ecmblib.lib.ecmb_metadata_based_on.ecmbMetaDataBasedOn.set_language">
-<span class="sig-name descname"><span class="pre">set_language</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">language</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#ecmblib.lib.ecmb_metadata_based_on.ecmbMetaDataBasedOn.set_language" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_language</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">language</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#ecmblib.lib.ecmb_enums.LANGUAGES_LIST" title="ecmblib.lib.ecmb_enums.LANGUAGES_LIST"><span class="pre">LANGUAGES_LIST</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#ecmblib.lib.ecmb_metadata_based_on.ecmbMetaDataBasedOn.set_language" title="Link to this definition">#</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>language</strong> (<em>str</em>) – the language of the book</p>
@@ -1438,6 +1438,196 @@ You can add images directly to the root as well for example the introduction, ta
 </ul>
 </dd></dl>
 
+<dl class="py class">
+<dt class="sig sig-object py" id="ecmblib.lib.ecmb_enums.LANGUAGES_LIST">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ecmblib.lib.ecmb_enums.</span></span><span class="sig-name descname"><span class="pre">LANGUAGES_LIST</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">module</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qualname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boundary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ecmblib.lib.ecmb_enums.LANGUAGES_LIST" title="Link to this definition">#</a></dt>
+<dd><ul class="simple">
+<li><p>Afar = ‘aa’</p></li>
+<li><p>Abkhaz = ‘ab’</p></li>
+<li><p>Avestan = ‘ae’</p></li>
+<li><p>Afrikaans = ‘af’</p></li>
+<li><p>Akan = ‘ak’</p></li>
+<li><p>Amharic = ‘am’</p></li>
+<li><p>Aragonese = ‘an’</p></li>
+<li><p>Arabic = ‘ar’</p></li>
+<li><p>Assamese = ‘as’</p></li>
+<li><p>Avaric = ‘av’</p></li>
+<li><p>Aymara = ‘ay’</p></li>
+<li><p>Azerbaijani = ‘az’</p></li>
+<li><p>Bashkir = ‘ba’</p></li>
+<li><p>Belarusian = ‘be’</p></li>
+<li><p>Bulgarian = ‘bg’</p></li>
+<li><p>Bislama = ‘bi’</p></li>
+<li><p>Bambara = ‘bm’</p></li>
+<li><p>Bengali = ‘bn’</p></li>
+<li><p>Tibetan = ‘bo’</p></li>
+<li><p>Breton = ‘br’</p></li>
+<li><p>Bosnian = ‘bs’</p></li>
+<li><p>Catalan = ‘ca’</p></li>
+<li><p>Chechen = ‘ce’</p></li>
+<li><p>Chamorro = ‘ch’</p></li>
+<li><p>Corsican = ‘co’</p></li>
+<li><p>Cree = ‘cr’</p></li>
+<li><p>Czech = ‘cs’</p></li>
+<li><p>Old_Church_Slavonic = ‘cu’</p></li>
+<li><p>Chuvash = ‘cv’</p></li>
+<li><p>Welsh = ‘cy’</p></li>
+<li><p>Danish = ‘da’</p></li>
+<li><p>German = ‘de’</p></li>
+<li><p>Divehi = ‘dv’</p></li>
+<li><p>Dzongkha = ‘dz’</p></li>
+<li><p>Ewe = ‘ee’</p></li>
+<li><p>Greek = ‘el’</p></li>
+<li><p>English = ‘en’</p></li>
+<li><p>Esperanto = ‘eo’</p></li>
+<li><p>Spanish = ‘es’</p></li>
+<li><p>Estonian = ‘et’</p></li>
+<li><p>Basque = ‘eu’</p></li>
+<li><p>Persian = ‘fa’</p></li>
+<li><p>Fula = ‘ff’</p></li>
+<li><p>Finnish = ‘fi’</p></li>
+<li><p>Fijian = ‘fj’</p></li>
+<li><p>Faroese = ‘fo’</p></li>
+<li><p>French = ‘fr’</p></li>
+<li><p>Western_Frisian = ‘fy’</p></li>
+<li><p>Irish = ‘ga’</p></li>
+<li><p>Scottish_Gaelic = ‘gd’</p></li>
+<li><p>Galician = ‘gl’</p></li>
+<li><p>Guaraní = ‘gn’</p></li>
+<li><p>Gujarati = ‘gu’</p></li>
+<li><p>Manx = ‘gv’</p></li>
+<li><p>Hausa = ‘ha’</p></li>
+<li><p>Hebrew = ‘he’</p></li>
+<li><p>Hindi = ‘hi’</p></li>
+<li><p>Hiri_Motu = ‘ho’</p></li>
+<li><p>Croatian = ‘hr’</p></li>
+<li><p>Haitian = ‘ht’</p></li>
+<li><p>Hungarian = ‘hu’</p></li>
+<li><p>Armenian = ‘hy’</p></li>
+<li><p>Herero = ‘hz’</p></li>
+<li><p>Interlingua = ‘ia’</p></li>
+<li><p>Indonesian = ‘id’</p></li>
+<li><p>Interlingue = ‘ie’</p></li>
+<li><p>Igbo = ‘ig’</p></li>
+<li><p>Nuosu = ‘ii’</p></li>
+<li><p>Inupiaq = ‘ik’</p></li>
+<li><p>Ido = ‘io’</p></li>
+<li><p>Icelandic = ‘is’</p></li>
+<li><p>Italian = ‘it’</p></li>
+<li><p>Inuktitut = ‘iu’</p></li>
+<li><p>Japanese = ‘ja’</p></li>
+<li><p>Javanese = ‘jv’</p></li>
+<li><p>Georgian = ‘ka’</p></li>
+<li><p>Kongo = ‘kg’</p></li>
+<li><p>Kikuyu = ‘ki’</p></li>
+<li><p>Kwanyama = ‘kj’</p></li>
+<li><p>Kazakh = ‘kk’</p></li>
+<li><p>Kalaallisut = ‘kl’</p></li>
+<li><p>Khmer = ‘km’</p></li>
+<li><p>Kannada = ‘kn’</p></li>
+<li><p>Korean = ‘ko’</p></li>
+<li><p>Kanuri = ‘kr’</p></li>
+<li><p>Kashmiri = ‘ks’</p></li>
+<li><p>Kurdish = ‘ku’</p></li>
+<li><p>Komi = ‘kv’</p></li>
+<li><p>Cornish = ‘kw’</p></li>
+<li><p>Kyrgyz = ‘ky’</p></li>
+<li><p>Latin = ‘la’</p></li>
+<li><p>Luxembourgish = ‘lb’</p></li>
+<li><p>Ganda = ‘lg’</p></li>
+<li><p>Limburgish = ‘li’</p></li>
+<li><p>Lingala = ‘ln’</p></li>
+<li><p>Lao = ‘lo’</p></li>
+<li><p>Lithuanian = ‘lt’</p></li>
+<li><p>Luba_Katanga = ‘lu’</p></li>
+<li><p>Latvian = ‘lv’</p></li>
+<li><p>Malagasy = ‘mg’</p></li>
+<li><p>Marshallese = ‘mh’</p></li>
+<li><p>Māori = ‘mi’</p></li>
+<li><p>Macedonian = ‘mk’</p></li>
+<li><p>Malayalam = ‘ml’</p></li>
+<li><p>Mongolian = ‘mn’</p></li>
+<li><p>Marathi = ‘mr’</p></li>
+<li><p>Malay = ‘ms’</p></li>
+<li><p>Maltese = ‘mt’</p></li>
+<li><p>Burmese = ‘my’</p></li>
+<li><p>Nauru = ‘na’</p></li>
+<li><p>Norwegian_Bokmål = ‘nb’</p></li>
+<li><p>Northern_Ndebele = ‘nd’</p></li>
+<li><p>Nepali = ‘ne’</p></li>
+<li><p>Ndonga = ‘ng’</p></li>
+<li><p>Dutch = ‘nl’</p></li>
+<li><p>Norwegian_Nynorsk = ‘nn’</p></li>
+<li><p>Norwegian = ‘no’</p></li>
+<li><p>Southern_Ndebele = ‘nr’</p></li>
+<li><p>Navajo = ‘nv’</p></li>
+<li><p>Chichewa = ‘ny’</p></li>
+<li><p>Occitan = ‘oc’</p></li>
+<li><p>Ojibwe = ‘oj’</p></li>
+<li><p>Oromo = ‘om’</p></li>
+<li><p>Oriya = ‘or’</p></li>
+<li><p>Ossetian = ‘os’</p></li>
+<li><p>Panjabi = ‘pa’</p></li>
+<li><p>Pāli = ‘pi’</p></li>
+<li><p>Polish = ‘pl’</p></li>
+<li><p>Pashto = ‘ps’</p></li>
+<li><p>Portuguese = ‘pt’</p></li>
+<li><p>Quechua = ‘qu’</p></li>
+<li><p>Romansh = ‘rm’</p></li>
+<li><p>Kirundi = ‘rn’</p></li>
+<li><p>Romanian = ‘ro’</p></li>
+<li><p>Russian = ‘ru’</p></li>
+<li><p>Kinyarwanda = ‘rw’</p></li>
+<li><p>Sanskrit = ‘sa’</p></li>
+<li><p>Sardinian = ‘sc’</p></li>
+<li><p>Sindhi = ‘sd’</p></li>
+<li><p>Northern_Sami = ‘se’</p></li>
+<li><p>Sango = ‘sg’</p></li>
+<li><p>Sinhala = ‘si’</p></li>
+<li><p>Slovak = ‘sk’</p></li>
+<li><p>Slovenian = ‘sl’</p></li>
+<li><p>Samoan = ‘sm’</p></li>
+<li><p>Shona = ‘sn’</p></li>
+<li><p>Somali = ‘so’</p></li>
+<li><p>Albanian = ‘sq’</p></li>
+<li><p>Serbian = ‘sr’</p></li>
+<li><p>Swati = ‘ss’</p></li>
+<li><p>Southern_Sotho = ‘st’</p></li>
+<li><p>Sundanese = ‘su’</p></li>
+<li><p>Swedish = ‘sv’</p></li>
+<li><p>Swahili = ‘sw’</p></li>
+<li><p>Tamil = ‘ta’</p></li>
+<li><p>Telugu = ‘te’</p></li>
+<li><p>Tajik = ‘tg’</p></li>
+<li><p>Thai = ‘th’</p></li>
+<li><p>Tigrinya = ‘ti’</p></li>
+<li><p>Turkmen = ‘tk’</p></li>
+<li><p>Tagalog = ‘tl’</p></li>
+<li><p>Tswana = ‘tn’</p></li>
+<li><p>Tonga = ‘to’</p></li>
+<li><p>Turkish = ‘tr’</p></li>
+<li><p>Tsonga = ‘ts’</p></li>
+<li><p>Tatar = ‘tt’</p></li>
+<li><p>Twi = ‘tw’</p></li>
+<li><p>Tahitian = ‘ty’</p></li>
+<li><p>Uyghur = ‘ug’</p></li>
+<li><p>Ukrainian = ‘uk’</p></li>
+<li><p>Urdu = ‘ur’</p></li>
+<li><p>Uzbek = ‘uz’</p></li>
+<li><p>Venda = ‘ve’</p></li>
+<li><p>Vietnamese = ‘vi’</p></li>
+<li><p>Volapük = ‘vo’</p></li>
+<li><p>Walloon = ‘wa’</p></li>
+<li><p>Wolof = ‘wo’</p></li>
+<li><p>Xhosa = ‘xh’</p></li>
+<li><p>Yiddish = ‘yi’</p></li>
+<li><p>Yoruba = ‘yo’</p></li>
+<li><p>Zhuang = ‘za’</p></li>
+<li><p>Chinese = ‘zh’</p></li>
+<li><p>Zulu = ‘zu’</p></li>
+</ul>
+</dd></dl>
+
 </section>
 </section>
 
@@ -1616,6 +1806,7 @@ You can add images directly to the root as well for example the introduction, ta
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ecmblib.lib.ecmb_enums.EDITOR_ROLE"><code class="docutils literal notranslate"><span class="pre">EDITOR_ROLE</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ecmblib.lib.ecmb_enums.CONTENT_WARNING"><code class="docutils literal notranslate"><span class="pre">CONTENT_WARNING</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ecmblib.lib.ecmb_enums.TARGET_SIDE"><code class="docutils literal notranslate"><span class="pre">TARGET_SIDE</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ecmblib.lib.ecmb_enums.LANGUAGES_LIST"><code class="docutils literal notranslate"><span class="pre">LANGUAGES_LIST</span></code></a></li>
 </ul>
 </li>
 </ul>

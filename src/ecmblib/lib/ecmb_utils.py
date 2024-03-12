@@ -23,7 +23,7 @@
 # SOFTWARE.
 #####################################################################
 
-import re, inspect
+import re, inspect, datetime
 from enum import Enum
 from typing import Callable
 
@@ -141,4 +141,31 @@ class ecmbUtils():
                 ecmbUtils.raise_exception(f'{varname} has to be as string and match: "{regex}"!', stack_nr + 1)
             return False
         return ecmbUtils.validate_utf8(raise_exception, varname,  value, stack_nr + 1)
+    
+
+    @staticmethod
+    def validate_date(raise_exception: bool, varname: str,  value:str, stack_nr: int = 0) -> None:
+        res = ecmbUtils.validate_regex(raise_exception, varname, value, '^[0-9]{4}(-[0-9]{2}-[0-9]{2})?$', stack_nr + 1)
+
+        if not res:
+            return res
+
+        current_year = datetime.date.today().year
+        if re.match('^[0-9]{4}$', value):
+            year = int(value)
+        else:
+            try:
+                d = datetime.date.fromisoformat(value)
+                year = d.year
+            except:
+                if raise_exception:
+                    ecmbUtils.raise_exception(f'{varname} is not a valid date!', stack_nr + 1)
+                return False
+            
+        if year < 1900 or year > current_year + 1:
+            if raise_exception:
+                ecmbUtils.raise_exception(f'{varname} has to be between 1900 and ' + str(current_year + 1), stack_nr + 1)
+            return False
+        
+        return True
     

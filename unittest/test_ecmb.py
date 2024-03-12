@@ -86,7 +86,7 @@ class testEcmb(unittest.TestCase):
 
 
             # original
-            book.original.set_language('jp')
+            book.original.set_language('ja')
             book.original.set_isbn('9876543210')
             book.original.set_publisher('BestNovelPublisher Inc.')
             book.original.set_publisher('BestNovelPublisher Inc.', href='https://www.bestnovelpublisher-inc.com')
@@ -103,7 +103,7 @@ class testEcmb(unittest.TestCase):
 
             # based on
             book.based_on.set_type(BASED_ON_TYPE.LIGHTNOVEL)
-            book.based_on.set_language('jp')
+            book.based_on.set_language('ja')
             book.based_on.set_isbn('9876543210')
             book.based_on.set_publisher('BestNovelPublisher Inc.')
             book.based_on.set_publisher('BestNovelPublisher Inc.', href='https://www.bestnovelpublisher-inc.com')
@@ -262,10 +262,10 @@ class testEcmb(unittest.TestCase):
             image2 = book.content.add_image(fp_left)
             book.content.add_image(fp_left, unique_id='img_2')
 
-            image3 = book.content.add_image(img_str_full, img_str, img_str)
-            book.content.add_image(img_str_full, img_str, img_str, unique_id='img_3')
-            image4 = book.content.add_image(fp_full, fp_left, fp_right)
-            book.content.add_image(fp_full, fp_left, fp_right, unique_id='img_4')
+            image3 = book.content.add_image(img_str_full)
+            book.content.add_image(img_str_full, unique_id='img_3')
+            image4 = book.content.add_image(fp_full)
+            book.content.add_image(fp_full, unique_id='img_4')
 
             folder1 = book.content.add_folder()
             sub1 = folder1.add_folder()
@@ -278,8 +278,8 @@ class testEcmb(unittest.TestCase):
             folder2.add_image(img_str, unique_id='img_6')
 
             folder3 = book.content.add_folder('dir_3')
-            image7 = folder3.add_image(fp_full, fp_left, fp_right)
-            folder3.add_image(fp_full, fp_left, fp_right, unique_id='img_7')
+            image7 = folder3.add_image(fp_full)
+            folder3.add_image(fp_full, unique_id='img_7')
 
 
             nav1 = book.navigation.add_headline('aaaaaaaa')

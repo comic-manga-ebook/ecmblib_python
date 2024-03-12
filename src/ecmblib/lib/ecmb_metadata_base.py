@@ -70,7 +70,7 @@ class ecmbMetaDataBase(ABC):
         :type publishdate: str 
         """        
         if publishdate != None and publishdate != '':
-            ecmbUtils.validate_regex(True, 'publishdate', publishdate, '^[0-9]{4}(-[0-9]{2}-[0-9]{2})?$')
+            ecmbUtils.validate_date(True, 'publishdate', publishdate)
         self._data['publishdate'] = (publishdate, {})
         
 

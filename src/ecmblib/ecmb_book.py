@@ -83,11 +83,11 @@ class ecmbBook:
     _build_id_counter = None
     _page_nr_counter = None
 
-    def __init__(self, book_type: BOOK_TYPE, language: str, uid: str, width: int, height: int):
+    def __init__(self, book_type: BOOK_TYPE, language: LANGUAGES_LIST, uid: str, width: int, height: int):
         book_type = ecmbUtils.enum_value(book_type)
         
         ecmbUtils.validate_enum(True, 'book_type', book_type, BOOK_TYPE)
-        ecmbUtils.validate_regex(True, 'language', language, r'^[a-z]{2}$')
+        ecmbUtils.validate_enum(True, 'language', language, LANGUAGES_LIST)
         ecmbUtils.validate_regex(True, 'uid', uid, r'^[a-z0-9_]{16,255}$')
         ecmbUtils.validate_int(True, 'width', width, 100)
         ecmbUtils.validate_int(True, 'height', height, 100)

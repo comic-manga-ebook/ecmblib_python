@@ -48,14 +48,14 @@ class ecmbMetaDataOriginal(ecmbMetaDataBase):
        self._msg = f'if you provide a original-information the title is mandatory! Please use book.original.set_title("My Book Title")'
        self._node = 'original'
     
-    def set_language(self, language: str) -> None:
+    def set_language(self, language: LANGUAGES_LIST) -> None:
         """set_language 
 
         :param language: the language of the book
         :type language: str
         """ 
         if language != None and language != '':
-            ecmbUtils.validate_regex(True, 'language', language, '^[a-z]{2}$')
+            ecmbUtils.validate_enum(True, 'language', language, LANGUAGES_LIST)
         self._data['language'] = (language, {})
 
 
