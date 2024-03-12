@@ -151,8 +151,8 @@ class TARGET_SIDE(Enum):
     RIGHT = 'right'
 
 
-class LANGUAGES_LIST(Enum):
-    """LANGUAGES_LIST
+class LANGUAGE_CODE(Enum):
+    """LANGUAGE_CODE
     * Afar = 'aa'
     * Abkhaz = 'ab'
     * Avestan = 'ae'
