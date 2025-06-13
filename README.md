@@ -39,4 +39,7 @@ Copyright (c) 2023 Clemens K. (https://github.com/metacreature)
 The examples are working even if you didn't install the library via pip.<br /><br />
 
 ## Documentation
+
+Here you can find the documentaion for all Objects, functions and enums:
+
 [https://comic-manga-ebook.github.io/ecmblib](https://comic-manga-ebook.github.io/ecmblib)<br /><br />
